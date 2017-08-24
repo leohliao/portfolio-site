@@ -62,7 +62,7 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+  
 	.container.\31 25\25 {
 		width: 100%;
 		max-width: 1750px;
@@ -1718,6 +1718,12 @@
 		}
 
 /* Image */
+  .head-image-avatar img {
+    width: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 3px white,
+                0 0 0 5px #797979;
+  }
 
 	.image {
 		display: inline-block;
@@ -1752,14 +1758,16 @@
       position: absolute;
       width: 80px;
       height: 35px;
-      margin-left: 100px;
-      margin-top: -5%;
+      display: inline;
+      justify-content: center;
+      margin-left: -2em;
+      margin-top: -4em;
+      vertical-align: middle;
       opacity: 0;
       box-shadow: 0px 0px 0px 3px #DCDCDC inset;
       border-radius: 5px;
       background-color: rgba(54, 51, 51, 0.65);
       transition: .5s ease;
-
     }
 
     .image.fit .overlay h5{
@@ -1777,6 +1785,12 @@
       transition: .5s ease;
     }
 
+    .underlay-gif {
+      max-height: 550px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
     .image.fit:hover .underlay {
       transform: scale(1.2);
       opacity: .6;
@@ -1784,16 +1798,17 @@
     }
 
 		.image.featured {
-			display: block;
-      width: 960px;
-      height: 380px;
+      display: block;
+      min-width: 50%;
+      max-height: 400px;
       margin: 0 0 2em 0;
       border-radius: 7px;
       overflow: hidden;
     }
-    
+
     .image.featured img {
-      margin: -110px 0 0 0;
+      margin: -150px 0 0 0;
+      width:calc(540px-1200px);
     }
 
 		.image.left {
@@ -2252,7 +2267,8 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+        background-image: url("http://res.cloudinary.com/leosoba/image/upload/b_rgb:060606,co_rgb:767676,e_blur:537,o_75/v1503539731/OLO2EG0_b5syer.jpg");
+        max-height: 700px;
 			}
 
 			#main > section.two {
@@ -2309,8 +2325,8 @@
 
 			#main section.cover {
 				padding: 5em 0;
-			}
-
+      }
+      
 	}
 
 /* Narrow */
@@ -2382,7 +2398,8 @@
 
 			#main {
 				margin-left: 20%;
-			}
+      }
+
 
 	}
 
@@ -2394,7 +2411,7 @@
 
 	@media screen and (max-width: 960px) {
 
-		/* Basic */
+    /* Basic */
 
 			html, body {
 				overflow-x: hidden;
