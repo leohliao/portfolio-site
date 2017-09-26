@@ -1814,7 +1814,7 @@
     }
 
     .image.featured img {
-      margin: -150px 0 0 0;
+      margin: 0 0 0 0;
       width:calc(540px-1200px);
     }
 
